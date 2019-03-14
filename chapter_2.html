@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var mulai = 'y'
+        while(mulai=='y'){
+            var angka1 = parseInt(prompt('masukkan angka pertama'));
+            var angka2 = parseInt(prompt('masukkan angka kedua'));
+            var operasi = prompt('Masukkan operasi (tambah / kurang / kali / bagi /modulus /pangkat / min / max)')
+            if(operasi=='tambah'){
+                alert('Hasil = '+(angka1+angka2))
+            } else if(operasi=='kurang'){
+                alert('Hasil = '+(angka1-angka2))
+            }else if(operasi=='kali'){
+                alert('Hasil = '+(angka1*angka2))
+            }else if(operasi=='bagi'){
+                alert('Hasil = '+(angka1/angka2))
+            }else if(operasi=='modulus'){
+                alert('Hasil = '+(angka1%angka2))
+            }else if(operasi=='pangkat'){
+                alert('Hasil = '+(Math.pow(angka1,angka2)))
+            }else if(operasi=='min'){
+                alert('Hasil = '+(Math.min(angka1,angka2)))
+            }else if(operasi=='max'){
+                alert('Hasil = '+(Math.max(angka1,angka2)))
+            }else{
+                alert("operasi matematika salah")
+            }
+            var mulai = prompt('apakah ingin mulai ?(y/n)')
+        }
+        
+    </script>
+    
+</body>
+</html>
